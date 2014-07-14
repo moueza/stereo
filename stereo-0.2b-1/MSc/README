@@ -1,0 +1,21 @@
+
+What is in this directory?
+--------------------------
+
+This is my 'Master of Science in Engineering' research dissertation.
+The dissertation was submitted to the Faculty of Engineering, University
+of the Witwatersrand in May of 1997 and was confirmed in September
+of the same year.
+
+The dissertation is about 50 pages, followed by an Appendix which contains
+the complete source code. Each page is in a seperate file. The appendix is
+not included since the source code is given in this distribution.
+
+Large pages containing a graphic may not print if you do not have enough
+memory in your printer. You can leave these out since they probably do
+not contain any writing,
+
+Paul Sheer
+
+Mon Oct  6 14:17:35 1997
+

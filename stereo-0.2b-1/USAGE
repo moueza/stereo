@@ -1,0 +1,80 @@
+USAGE
+-----
+
+
+This document describes using the stereo program.
+It should be read after reading my MSc thesis, for a clear
+understanding of stereo-metrological procedures.
+
+Upon running 'main/display' a main window will appear with
+a button array, an edit window, and a graphics window.
+To get data out of a pair of images you can follow this procedure:
+
+
+- Scan the image at in 256 grey level format. TARGA (.tga files) and
+TIFF (.tif or .tiff files) image file formats are recognised.
+ONLY uncompressed class G tiff files are supported. These are
+uncompressed 8 bits-per-pixel grey scale image files that most
+scanner software will support. If you have another image file
+format that you would like to use then get the 'Image Magick'
+package off the sunsite --- it can convert between any image file
+format. Beware that some programs reduce the resolution when converting
+large images, or may not be able to handle very large images.
+
+
+- Once you have the image, load it with the 'Load Image' button.
+It will take the image a long time to load, because a scaled
+image has to be created, and the image has to columnated for
+the disk caching mechanism. Load the other image also.
+
+
+- Load the calibration file with 'Load Cal'. An example calibration
+file with six calibration points is:
+
+1421.4      538.6       113.9
+3143.6      -0.7       547.0
+3109.0      673.6       211.7
+1785.2      -357.1       270.1
+3186.4      554.0       265.5
+2778.3      -508.9       650.0
+
+representing the x, y and z three dimensional coordinates of
+each point.
+
+
+- Place a marker on each calibration point in one image. You must
+place the markers in the same order as in the calibration file.
+You can move a marker by holding the Control key down, and
+pressing the left mouse button: the closest marker to the cursor
+will be moved to the cursor. You can delete a marker by holding down
+the control key and pressing the right mouse button: the closest
+marker will be deleted (but watch the order of the markers).
+The right mouse button will zoom in the zoom box.
+
+
+- After you have clicked on each calibration point, you can now
+calibrate the camera parameters. If you think that one or two
+markers may be inaccurate, click on 'Leave Out'. If you know the image
+aspect ratio in percent (from experience with many calibrations)
+set it to the desired value, otherwise set it to zero. Click
+on calibrate. After thinking for some time, the camera parameters will
+be found. Click on 'Cam Data' to see the camera position. If the
+error is acceptable, continue with the other image.
+
+
+- Clear the markers and save the desktop. You will be able to retrieve the
+the desktop with ready calibrated images at any later stage. Saving the
+desktop however does not save the editor file.
+
+
+- You can now proceed with fitting geometric primitives (see the
+section in my thesis). You may want to first load the example
+data 'test_data/lee.txt' in the source tree. Do this by clicking in the editor
+window, and using the 'File' menu to load a file. When the file 'lee.txt'
+is loaded.  Hit Alt-R to 'R'ender the image. The graphics window
+can then be used to rotate and scale the image. See the file 
+'3dtext.c' for an (innaccurate) reference on what the various editor
+commands do. The file 'test_data/3dtest.txt contains a further example
+(which was invented and did not come from actual images).
+
+

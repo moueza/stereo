@@ -1,0 +1,3 @@
+#define VERSION "r_VERSION_r"
+/* use shell scripts to replace all r_VERSION_r with the correct version */
+/* For updating, version is stated also in stereo.lsm, README, INSTALL, and configure.in */

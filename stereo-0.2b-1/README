@@ -1,0 +1,29 @@
+What is stereo?
+
+Stereo is a tool for loading up large grey tiff/targa files of stereo
+photographs and taking accurate 3D measurents from them. This
+process is sometimes used by surveyors as an alternative to
+physically measuring sites, and is called stereo-photometrology.
+
+Various geometric objects can be fitted to the stereo pairs,
+and then rendered in 3D, with grey shading and real time rotation
+and scaling.
+
+The package is still in its development phase, but is stable and
+can be used to full effect. I do not have any intension to continue
+development of this package in the near future. See the file
+PROGRAMMING if you want to work on stereo.
+
+See the directory ./MSc/ for my full M.Sc. thesis for which this
+package was developed. Here you will find mathematical algorithms
+and a detailed description of what the package does, as well as
+its specs. See the file INSTALL for compiling the package, and
+the file USAGE for a brief description of how to use the package.
+The USAGE file should be read together with thesis.
+
+PLEASE email me if you use Stereo on your system.
+
+Paul Sheer  <psheer@icon.co.za>
+
+Mon Oct  6 14:55:40 1997
+

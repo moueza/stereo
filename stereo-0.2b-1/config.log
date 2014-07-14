@@ -1,0 +1,56 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:602: checking host system type
+configure:623: checking target system type
+configure:641: checking build system type
+configure:681: checking whether make sets ${MAKE}
+configure:710: checking for gcc
+configure:787: checking whether the C compiler (gcc  ) works
+configure:801: gcc -o conftest    conftest.c  1>&5
+configure:821: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:826: checking whether we are using GNU C
+configure:850: checking whether gcc accepts -g
+configure:880: checking for ranlib
+configure:908: checking how to run the C preprocessor
+configure:973: checking for X
+configure:1287: checking for dnet_ntoa in -ldnet
+configure:1328: checking for dnet_ntoa in -ldnet_stub
+configure:1376: checking for gethostbyname
+configure:1474: checking for connect
+configure:1566: checking for remove
+configure:1658: checking for shmat
+configure:1759: checking for IceConnectionNumber in -lICE
+configure:1811: checking for dirent.h that defines DIR
+configure:1849: checking for opendir in -ldir
+configure:1932: checking for ANSI C header files
+configure:2046: checking for a BSD compatible install
+configure:2099: checking for fcntl.h
+configure:2099: checking for sys/time.h
+configure:2099: checking for unistd.h
+configure:2099: checking for sys/select.h
+configure:2137: checking for working const
+configure:2212: checking for inline
+configure:2252: checking for size_t
+configure:2285: checking for pid_t
+configure:2321: checking for working alloca.h
+configure:2354: checking for alloca
+configure:2548: checking return type of signal handlers
+configure:2589: checking for vprintf
+configure:2696: checking for strerror
+configure:2696: checking for getwd
+configure:2696: checking for re_comp
+configure:2696: checking for regcomp
+configure:2696: checking for strdup
+configure:2696: checking for strspn
+configure:2696: checking for strstr
+configure:2696: checking for strcspn
+configure:2751: checking for strchr
+configure:2751: checking for strrchr
+configure:2751: checking for memmove
+configure:2751: checking for memcpy
+configure:2751: checking for memset
+configure:2751: checking for memchr
+configure:2751: checking for memcmp
+configure:2806: checking for strcasecmp
+configure:2806: checking for strncasecmp

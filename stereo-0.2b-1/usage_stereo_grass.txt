@@ -1,0 +1,73 @@
+Currently I use it as follows:
+(You may calibrate using any 4+Polygon like TP's etc. which are
+visible in at least two photos)
+
+Put a multi-colored cube wireframe of known dimensions out in the
+location (level it using some standard method), write down it's
+relative coordinates. (used for Image calibration later on)
+Take as many photographs as seem appropriate (always with
+cube included). (at least 2 photos are necessary)
+Calibrate images using known info (relative cube coordinates) within
+stereo (display). Triangulate points of interest. ...
+with additional import and manipulation within grass to follow.
+ 
+
+If there is enough interest in merging stereo to grass, i will
+write/rewrite a grassmodule / stereo.
+(perhaps as an extension to OrthoRectificationSupport)
+
+Pros:
+pretty random Camera placement (cam location hasn't to be known!)
+pretty high quality results (depending on calibration points)
+one person usage of complete system (it's easy to deploy
+a "calibration" object and taking photos of it.)
+reusable datasets (Photos taken may be reviewed afterwards
+for other - former unknown - topics without having to 
+survey the points of interest again.)
+cheap (A simple camera/scanner system)  
+fast (doing some snapshots at more or less random positions
+really doesn't cost to much time)
+interoperates well with GPS/Remote Sensing)
+
+
+Cons:
+currently buggy software / no plug and play module as of now
+you can only measure what you can identify (as good/bad as v.digit)
+
+
+Plans:
+Reimplementing stereo within tk and a c library.
+Providing hooks for grass and image registration.
+
+
+Let me know if there is already some tool/module out there (GPL or sim.)
+(i.ortho.* doesn't count as it requires camera location as well
+as other accurate data not always at hand (according to GRASS Handbook))
+
+best regards,
+Christoph Hoegl
+
+(Stereo is a (pretty old) GPL package for stereo photogrammetry))
+---------------LSM Entry-----------------------------------
+Begin3
+Title:          Stereo
+Version:        0.2
+Entered-date:   06OCT97
+Description:    Stereo-photometrology package. A tool
+                for loading up high res grey tiff/targa
+                files of stereo photographs and
+                taking accurate 3D measurents from them.
+Keywords:       XLib, X Window System, X11, stereo,
+                photometrology, CAD, measurement,
+                Cooledit
+Author:         psheer@icon.co.za (Paul Sheer)
+Maintained-by:  Nobody
+Primary-site:   sunsite.unc.edu /pub/Linux/apps/math
+                3193kB stereo-0.2.tar.gz
+                1kB stereo.lsm
+Platforms:      Linux, and any Unix clone running X11
+Copying-policy: GPL
+End
+------------------LSM Entry------------------------------- 
+
+

@@ -1,0 +1,54 @@
+
+ANNOUNCING ALPHA SOFTWARE: STEREO - VERSION 0.2
+-----------------------------------------------
+
+This is the first public release of this software.
+
+Stereo is a tool for loading up large grey tiff/targa files of stereo
+photographs and taking accurate 3D measurents from them. This
+process is sometimes used by surveyors as an alternative to
+physically measuring sites, and is called stereo-photometrology.
+
+Various geometric objects can be fitted to the stereo pairs,
+and then rendered in 3D, with grey shading and real time rotation
+and scaling. Automatic camera calibration is featured, making the
+package, on the whole, a most sophisticated piece of software.
+
+This package was developed for my M.Sc. thesis, and contains the
+entire thesis in postscript as documentation. I do not have any
+intention to do extensions or maintenance, and invite anyone to
+continue development. Although this is Alpha software, it is stable,
+fully documented and can certainly be used.
+
+The source code also contains a matrix library that (among other
+matrix manipulation functions) can do least squares diagonalisation
+of a non-square matrix.
+
+Also contained is a widget library that can do 3D grey shaded
+rendering of surfaces with hidden surface removal.
+
+
+LSM file.......
+
+
+Begin3
+Title:          Stereo
+Version:        0.2
+Entered-date:   06OCT97
+Description:    Stereo-photometrology package. A tool
+                for loading up high res grey tiff/targa
+                files of stereo photographs and taking
+                accurate 3D measurents from them. Has a
+                nice GUI.
+Keywords:       XLib, X Window System, X11, stereo,
+                photometrology, CAD, measurement,
+                Cooledit
+Author:         psheer@icon.co.za (Paul Sheer)
+Maintained-by:  Nobody
+Primary-site:   sunsite.unc.edu /pub/?
+                3193kB stereo-0.2.tar.gz
+                1kB stereo.lsm
+Platforms:      Linux, and any Unix clone running X11
+Copying-policy: GPL
+End
+

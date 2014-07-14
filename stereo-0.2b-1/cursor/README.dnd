@@ -1,0 +1,6 @@
+   The cursor bitmaps and the cursor initialisation routines are from
+   the DND package which can be found with the OffiX package at
+   sunsite.unc.edu. These are Copyright (C) 1996 César Crusius.
+   I also took a look at his code to get a better idea how get my Dnd
+   working the same, and small parts of the code are modifications
+   from there.

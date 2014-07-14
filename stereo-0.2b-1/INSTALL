@@ -1,0 +1,78 @@
+[ This comes from cooledit. During the development, 'make install'
+  obviously isn't applicable. ]
+
+The result of executing the following steps is an
+executable 'main/display'. See the file USAGE for using the program.
+
+
+COMPILATION PROCEDURE:
+----------------------
+
+SUMMARY:
+--------
+
+(O) un-tar package in /usr/src
+(1) edit global.h for data and temp directories
+(2) ./configure
+(3) make
+
+
+DETAILS:
+--------
+
+    Copy the file stereo-0.2.tar.gz to the directory you would
+like to compile in, preferably '/usr/local/src' or '/usr/src', and
+then change to that directory. (You can also compile in your home
+directory.)
+
+
+Then type,
+    tar -xvzf stereo-0.2b.tar.gz
+or
+    gzip -cd stereo-0.2b.tar.gz | tar xvf -
+(whichever works).
+
+
+Then type,
+    cd stereo-0.2b
+
+Edit the files global.h and change the data and temp directories to those
+where your calibration files and images will be stored and those where
+temporary data will be written (not the /tmp directory).
+
+You can then configure the package by just typing,
+    ./configure
+However if you would like to set compiler optimisations, for a
+smaller binary, type,
+    CFLAGS=-O ./configure
+or,
+    setenv CFLAGS -O
+    ./configure
+whichever works on your shell. (Use -O2 instead
+of -O if your compiler supports this.)
+
+
+Finally type
+    make
+to compile.
+
+
+Done.
+----------------------------Note-----------------------------------------
+I found that when I first built Stereo, it immediately crashed on startup.
+I found a define in ~/widget/stringtools.c
+
+#define CRASHES_ON_STARTUP
+
+which uncommented and the problem went away.
+I was building on a Fedora 8 x86_64 system.
+I do not know if this define will cause other problems on other systems,
+so if you have strange behaviour, you might try re-commenting this define
+and rebuilding, to see what effect it has.
+
+Terry Duell.
+30 July 2008
+tduell@users.sorceforge.net
+
+
+

@@ -1,0 +1,57 @@
+PROGRAMMING
+-----------
+
+This file documents a few points for those who wish to continue
+development of the package.
+
+
+You should download the latest version of the Coolwidget library
+before continuing, and then port the sources in ./main/
+The library comes with the Cooledit package
+    sunsite.unc.edu /pub/Linux/apps/editors/X/cooledit-?.?.?.tar.gz
+The changes to the library from this older version mostly envolve
+changes to the function names.
+
+
+The program is incomplete in the following areas:
+
+1 Button layout. (Now fixed).
+2 The program has two buttons to fit circles in two different ways.
+    The first way is to triangulate corresponding points.
+    The resulting 3D points will form a 2D circle orientated in some
+    way in 3D. A plane, and then a 2D circle is fitted to those points.
+    The second way is to project the circle into both views.
+    The error with the points to the resulting ellipses can be found
+    and optimised. With the latter method, the points do not have to
+    correspond -- there can even be more points in the one image than
+    the other. This method requires a good initial estimate to converge.
+    Finding this estimate HAS NOT BEEN CODED. The algorithm does work
+    perfectly with such an initial estimate though.
+3 The program segfaults when you kill a view (This should now be fixed).
+4 The various different output routines do not output all the geometric data
+    for the different objects into the editor. Only some objects are completed.
+    These output routines are easy to write, though.
+5 The 3dtext.c file converts editor text into 3D object rendering.
+    The documentation in the beginning of the file may not be entirely
+    accurate, but is mostly applicable.
+6 Ellipse fitting has not been tested. and works analogous to the first
+    circle fitting method of 2 above.
+7 No convertion is performed on AECI's calibration file format. If you
+    have a file in the North-East-Up/Down format, you will have to hand
+    edit it into the format described in the file USAGE.
+
+
+Note that the C indenting style is K&R. It is very standard. Don't
+change it, 'cos its the best. You can use 8 tabs though, if you want (like
+the Linux kernel source.)
+
+More! [Terry Duell]
+
+1.	Take care when opening the file browser to open a data file in the data window.
+	If the browser opens beneath any other window, you can't get to it to select a file,
+	so move other windows out of the way first.
+	
+
+
+
+

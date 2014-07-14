@@ -1,0 +1,19 @@
+Begin3
+Title:          Stereo
+Version:        0.2
+Entered-date:   06OCT97
+Description:    Stereo-photometrology package. A tool
+                for loading up high res grey tiff/targa
+                files of stereo photographs and
+                taking accurate 3D measurents from them.
+Keywords:       XLib, X Window System, X11, stereo,
+                photometrology, CAD, measurement,
+                Cooledit
+Author:         psheer@icon.co.za (Paul Sheer)
+Maintained-by:  Nobody
+Primary-site:   sunsite.unc.edu /pub/Linux/apps/math
+                3193kB stereo-0.2.tar.gz
+                1kB stereo.lsm
+Platforms:      Linux, and any Unix clone running X11
+Copying-policy: GPL
+End
