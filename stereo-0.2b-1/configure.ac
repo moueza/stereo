@@ -1,5 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_INIT(main/display.c)
+AM_INIT_AUTOMAKE(stereo, 1.0)     dnl moi
 AC_CONFIG_HEADER(config.h)
 
 dnl Define package and version.

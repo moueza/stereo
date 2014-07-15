@@ -33,6 +33,8 @@ File 3dkit.h
 #define THREEDKIT_H 1
 
 #include "triangle.h"
+//#include "include/iprt/asm.h" //moi   https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56148
+#include "config.h" //moi
 
 #define TD_DEFAULT_MAXCOLOR 63
 #define TD_DEFAULT_COLOR 0

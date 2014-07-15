@@ -57,7 +57,7 @@ The function TD_initcolor may be called to do this for you.
 The surfaces are drawn on the screen using one of the following methods.
 The integer surf.render determines the method.
 
-0 : Interpolated trangles are drawn with each rectangle outlined.
+0 : Interpolated traingles are drawn with each rectangle outlined.
 1 : A wire frame is drawn of the edges of the surface only.
 2 : Interpolated triangles only.
 3 : Mesh - each rectangle outlined only.
@@ -114,16 +114,31 @@ static inline int muldiv64 (int m1, int m2, int d)
 /* 386 (which gcc doesn't know well enough) to efficiently perform integer */
 /* scaling without having to worry about overflows. */
 
+
 static inline int muldiv64 (int m1, int m2, int d)
 {
 /* int32 * int32 -> int64 / int32 -> int32 */
     int result;
-    __asm__ (
-		"imull %%edx\n\t"
-		"idivl %3\n\t"
-  :		"=a" (result)	/* out */
-  :		"a" (m1), "d" (m2), "g" (d)	/* in */
-  :		"ax", "dx"	/* mod */
+    //  https://gcc.gnu.org/bugzilla/show_bug.cgi?id=59086   error: ‘asm’ operand has impossible constraints  __asm_
+    // http://asm.sourceforge.net/articles/rmiyagi-inline-asm.txt   \n \t
+    //syntax http://web.cecs.pdx.edu/~apt/cs322/x86-64.pdf
+  
+
+ 
+ //    idivl s = signed divide of %edx::%eax by s; quotient in %eax, remainder in %edx
+
+    //http://stackoverflow.com/questions/14911647/att-assembly-language-arithmetic
+    //imull  $16, (%eax, %edx, 4)
+
+    //	"imul %%dx\n\t"
+    //		"idivl %3\n\t"
+
+    //	"=a" (result)
+    //	"a" (m1), "d" (m2), "g" (d)
+    //	"eax", "edx"
+asm(
+"\n\t"
+
 	);
     return result;
 }

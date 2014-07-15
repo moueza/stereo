@@ -1,7 +1,7 @@
-noinst_LIBRARIES = cw
+noinst_LIBRARIES = libcw.a
+# ou .la
 
-
-cw_SOURCES = 3dinit.c 3dinit.h 3dkit.c 3dkit.h 3dtext.c ClientWin.c \
+libcw_a_SOURCES = 3dinit.c 3dinit.h 3dkit.c 3dkit.h 3dtext.c ClientWin.c \
 	bitmapbutton.c cachedraw.c clearevents.c cmdlineopt.c \
 	cmdlineopt.h compatable.c coollocal.h coolnext.c \
 	coolwidget.c coolwidget.h copyright.h dialog.c dialog.h dirtools.c \

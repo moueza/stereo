@@ -10,7 +10,8 @@ display_SOURCES = \
 	imagefit.c imagefit.h join.c join.h savewindow.c \
 	../config.h
 
-INCLUDES = -I$(top_srcdir)/widget -I$(top_srcdir)
+# INCLUDES = -I$(top_srcdir)/widget -I$(top_srcdir)
+AM_CPPFLAGS = -I$(top_srcdir)/widget -I$(top_srcdir)
 
 LDADD = ../widget/libcw.a -lX11 -lm
 
