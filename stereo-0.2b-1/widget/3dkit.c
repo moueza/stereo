@@ -136,7 +136,7 @@ static inline int muldiv64 (int m1, int m2, int d)
     //	"=a" (result)
     //	"a" (m1), "d" (m2), "g" (d)
     //	"eax", "edx"
-asm(
+__asm__(
 "\n\t"
 
 	);
