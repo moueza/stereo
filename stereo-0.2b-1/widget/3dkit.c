@@ -133,12 +133,14 @@ static inline int muldiv64 (int m1, int m2, int d)
     //	"imul %%dx\n\t"
     //		"idivl %3\n\t"
 
-    //	"=a" (result)
-    //	"a" (m1), "d" (m2), "g" (d)
-    //	"eax", "edx"
+    //:	"=a" (result)
+    //:	"a" (m1), "d" (m2), "g" (d)
+    //:	"eax", "edx"
 __asm__(
 "\n\t"
-
+:	"=r" (result)
+:	"r" (m1), "r" (m2), "r" (d)
+:	"eax", "edx"
 	);
     return result;
 }
