@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <gtodo>
-  <category title="Personal" place="0"/>
-  <category title="Business" place="1"/>
-  <category title="Unfiled" place="2"/>
+  <!-- <category title="Personal" place="0"/> -->
+  <!-- <category title="Business" place="1"/> -->
+  <!-- <category title="Unfiled" place="2"/> -->
+  <category title=" cunit " place="1"/>
+  <category title="MPI  OpenMP" place="2"/>
+  <category title="   QT" place="3"/>
+  <category title="Textures segmentation" place="3.5"/>
+
+
+  <category title=" Shadows" place="4"/>
 </gtodo>
